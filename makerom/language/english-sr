@@ -1,0 +1,120 @@
+#==============================================================================
+#title:         LangEngine English
+#description:   Script that able Lang on BASH
+#author:        Franco28
+#created:       April 27 2019
+#updated:       1.1 Lang
+#version:       1.0
+#usage:         N/A
+#==============================================================================
+
+# Main Menu
+export t_title_main="Main Menu"
+export t_title_lang="Restart Lang"
+export t_title_bwayne="Build Wayne"
+export t_title_bjasmine="Build Jasmine"
+export t_title_ccache="Clean Ccache"
+export t_title_cleanout="Clean all out folder"
+export t_title_adb="Take adb logcat"
+export t_title_devread="DEV: Readme!"
+export t_title_kernel="Build Xiaomi Kernel"
+export t_title_syncrom="Sync ROM Source"
+export t_title_cts="Check Tool Source - Doesn't Work"
+export t_menu_quit="Quit or Restart Launcher"
+export t_menu_back="b = Back"
+
+# General
+export t_general_wait="Wait..."
+export t_general_debug="$redt$boldDebug out was created to $LOG_FILE$normal"
+export t_general_loading="Loading..."
+export t_general_question="Are you sure that you want to do this?"
+export t_general_yes="Press y/Y to continue..."
+export t_general_ccache="Clearing CCACHE wait..."
+export t_general_clean_out="Clearing all out folder..."
+
+# Adb
+export t_adb_succes="Logcat was txt created to: $logs/logcat.txt"
+export t_adb_error="Can't find ADB"
+
+# Selection
+export t_select="Make your selection:  "
+export t_select_enter="Make your selection and press ENTER:  "
+
+# Errors
+export t_warning="WARNING:"
+export t_warning_sync="$bold$redt$t_warning Directory $DIR was found and if you don't have set it on local_manifest this will be removed when sync! Do you want to continue? ...$normal"
+export t_warning_sync2="$bold$redb$t_warning$normal $bold$redt$DIR was not found this only works with that $DIR... folder$normal"
+export t_error="ERROR:"
+export t_invalid_option="Invalid option:"
+export t_error_mess="Something went wrong. Please if you start up the tool with SUDO tool won't boot..."
+export t_error_sudo="Please if you start up the tool with SU tool won't boot..."
+export t_error_bash="Please start Tool with BASH on Linux..."
+export t_error_py="You must install Python3.5 or higher to use this Tool."
+
+# Press ENTER
+export t_enter_continue="Press ENTER to continue"
+export t_enter_main_menu="Press ENTER to return to the Main Menu"
+export t_enter_ready="Press ENTER when ready"
+export t_enter_try_again="Press ENTER to try again"
+export t_enter_continue_rest="Press ENTER to continue the rest of the process"
+export t_enter_exit="Press ENTER to exit or restart"
+export t_enter_anykey="Press any key to continue..."
+
+# Internet
+export t_internet_status="Internet Status: "
+export t_internet_status_off="ERROR_INTERNET_DISCONNECTED"
+export t_internet_status_on="Online"
+export t_internet_status_warn="Please check your network connection..."
+
+# Language
+export t_title_cho_lang="Choose language:"
+export t_reset_language="Language has been reset. Changes will be made\nthe next time you start the Tool"
+export t_checking_language="Checking language file"
+export t_lang_added="New English language elements have been added to :"
+export t_lang_added_es="New Spanish language elements have been added to :"
+export t_lang_translate="Make sure you translate them."
+
+export t_bannerxiaomi="
+$bold$redt ██████╗ ██╗   ██╗██╗██╗     ██████╗     ██████╗  ██████╗ ███╗   ███╗    ██╗  ██╗██╗ █████╗  ██████╗ ███╗   ███╗██╗ 
+$bold$redt ██╔══██╗██║   ██║██║██║     ██╔══██╗    ██╔══██╗██╔═══██╗████╗ ████║    ╚██╗██╔╝██║██╔══██╗██╔═══██╗████╗ ████║██║ 
+$bold$redt ██████╔╝██║   ██║██║██║     ██║  ██║    ██████╔╝██║   ██║██╔████╔██║     ╚███╔╝ ██║███████║██║   ██║██╔████╔██║██║ 
+$bold$redt ██╔══██╗██║   ██║██║██║     ██║  ██║    ██╔══██╗██║   ██║██║╚██╔╝██║     ██╔██╗ ██║██╔══██║██║   ██║██║╚██╔╝██║██║ 
+$bold$redt ██████╔╝╚██████╔╝██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚═╝ ██║    ██╔╝ ██╗██║██║  ██║╚██████╔╝██║ ╚═╝ ██║██║ 
+$bold$redt ╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝    ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ 
+$normal"
+
+export t_bannerclean="
+$bold$redt  ██████╗██╗     ███████╗ █████╗ ███╗   ██╗███████╗██████╗  
+$bold$redt ██╔════╝██║     ██╔════╝██╔══██╗████╗  ██║██╔════╝██╔══██╗ 
+$bold$redt ██║     ██║     █████╗  ███████║██╔██╗ ██║█████╗  ██████╔╝ 
+$bold$redt ██║     ██║     ██╔══╝  ██╔══██║██║╚██╗██║██╔══╝  ██╔══██╗ 
+$bold$redt ╚██████╗███████╗███████╗██║  ██║██║ ╚████║███████╗██║  ██║ 
+$bold$redt  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ 
+$normal"
+
+export t_syncbanner="
+$bold$redt ███████╗██╗   ██╗███╗   ██╗ ██████╗    ██████╗  ██████╗ ███╗   ███╗ 
+$bold$redt ██╔════╝╚██╗ ██╔╝████╗  ██║██╔════╝    ██╔══██╗██╔═══██╗████╗ ████║ 
+$bold$redt ███████╗ ╚████╔╝ ██╔██╗ ██║██║         ██████╔╝██║   ██║██╔████╔██║ 
+$bold$redt ╚════██║  ╚██╔╝  ██║╚██╗██║██║         ██╔══██╗██║   ██║██║╚██╔╝██║ 
+$bold$redt ███████║   ██║   ██║ ╚████║╚██████╗    ██║  ██║╚██████╔╝██║ ╚═╝ ██║ 
+$bold$redt ╚══════╝   ╚═╝   ╚═╝  ╚═══╝ ╚═════╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝ 
+$normal"
+
+export t_dubanner="
+$bold$redt ██████╗ ██╗██████╗ ████████╗██╗   ██╗    ██╗   ██╗███╗   ██╗██╗ ██████╗ ██████╗ ██████╗ ███╗   ██╗███████╗ 
+$bold$redt ██╔══██╗██║██╔══██╗╚══██╔══╝╚██╗ ██╔╝    ██║   ██║████╗  ██║██║██╔════╝██╔═══██╗██╔══██╗████╗  ██║██╔════╝ 
+$bold$redt ██║  ██║██║██████╔╝   ██║    ╚████╔╝     ██║   ██║██╔██╗ ██║██║██║     ██║   ██║██████╔╝██╔██╗ ██║███████╗ 
+$bold$redt ██║  ██║██║██╔══██╗   ██║     ╚██╔╝      ██║   ██║██║╚██╗██║██║██║     ██║   ██║██╔══██╗██║╚██╗██║╚════██║ 
+$bold$redt ██████╔╝██║██║  ██║   ██║      ██║       ╚██████╔╝██║ ╚████║██║╚██████╗╚██████╔╝██║  ██║██║ ╚████║███████║ 
+$bold$redt ╚═════╝ ╚═╝╚═╝  ╚═╝   ╚═╝      ╚═╝        ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝ 
+$normal"
+
+export t_errorbanner="
+$bold$redt ███████╗██████╗ ██████╗  ██████╗ ██████╗ 
+$bold$redt ██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗
+$bold$redt █████╗  ██████╔╝██████╔╝██║   ██║██████╔╝
+$bold$redt ██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗
+$bold$redt ███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║
+$bold$redt ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+$normal"

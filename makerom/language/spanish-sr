@@ -1,0 +1,121 @@
+#==============================================================================
+#title:         LangEngine Spanish
+#description:   Script that able Lang on BASH
+#author:        Franco28
+#created:       April 27 2019
+#updated:       1.1 Lang
+#version:       1.0
+#usage:         N/A
+#==============================================================================
+
+# Main Menu
+export t_title_main="Menú Principal"
+export t_title_lang="Reiniciar idioma"
+export t_title_bwayne="Compilar Wayne"
+export t_title_bjasmine="Compilar Jasmine"
+export t_title_devread="DEV: Leeme!"
+export t_title_adb="Tomar ADB logcat"
+export t_title_ccache="Limpiar Ccache"
+export t_title_kernel="Compilar Xiaomi Kernel"
+export t_title_cleanout="Limpiar toda la carpeta out"
+export t_title_syncrom="Sincronizar las fuentes de la ROM"
+export t_title_cts="Verificar fuentes de la herramienta - No funciona"
+export t_menu_quit="Salir o Reiniciar Launcher"
+export t_menu_back="a = Atras"
+
+# Selection
+export t_select="Haga su selección:  "
+export t_select_enter="Haga su selección y aprete ENTER:  "
+
+# General
+export t_general_wait="Espere..."
+export t_general_loading="Cargando..."
+export t_general_debug="$redt$boldDebug out fue creado en $LOG_FILE$normal"
+export t_general_ccache="Limpiando CCACHE espere..."
+export t_general_question="Esta seguro que desea hacer esto?"
+export t_general_yes="Presiona y/Y para continuar..."
+export t_general_clean_out="Limpiando toda la carpeta out..."
+
+# Adb
+export t_adb_succes="Logcat fue creado como archivo txt en: $logs/logcat.txt"
+export t_adb_error="No se pudo encontrar ADB"
+
+# Errors
+export t_warning="CUIDADO:"
+export t_error="ERROR:"
+export t_warning_sync="$bold$redt$t_warning Directorio $DIR se encontro, si no tienes programado en local_manifest los repositorios, cuando sincronice perderas las carpetas! ¿Queres continuar? ...$normal"
+export t_warning_sync2="$bold$redb$t_warning$normal $bold$redt$DIR was not found this only works with that $DIR... folder$normal"
+export t_invalid_option="Opción inválida"
+export t_error_mess="Algo salió mal."
+export t_error_sudo="Por favor si inicio el Tool con ROOT, no funcionara hasta que inicie normal..."
+export t_error_bash="Por favor inicie el Tool con BASH en Linux..."
+export t_error_py="Debes instalar Python3.5 o superior para usar el Tool."
+
+# Press ENTER
+export t_enter_continue="Presiona ENTER para continuar"
+export t_enter_main_menu="Presiona ENTER para volver al menú principal"
+export t_enter_ready="Presiona ENTER cuando este listo"
+export t_enter_try_again="Presiona ENTER para reintentar"
+export t_enter_continue_rest="Presiona ENTER para continuar con el resto del proceso"
+export t_enter_exit="Presiona ENTER para salir o reiniciar"
+export t_enter_anykey="Presiona cualquier tecla para continuar..."
+
+# Internet
+export t_internet_status="Estado de Conexión a Internet: "
+export t_internet_status_off="ERROR_INTERNET_DISCONNECTED (Error de conexión)"
+export t_internet_status_on="Conexión establecida"
+export t_internet_status_warn="Por favor verifique su conexión a internet..."
+
+# Language
+export t_title_cho_lang="Elija el idioma: "
+export t_reset_language="Su idioma a sido reiniciado. Los cambios serán realizados \nen el próximo inicio..."
+export t_checking_language="Verificando archivo de idiomas"
+export t_lang_added="Nuevos elementos han sido añadidos al idioma English"
+export t_lang_added_es="Nuevos elementos han sido añadidos al idioma Español"
+export t_lang_translate="Asegurese de que se a traducido."
+
+export t_bannerxiaomi="
+$bold$redt ██████╗ ██╗   ██╗██╗██╗     ██████╗     ██████╗  ██████╗ ███╗   ███╗    ██╗  ██╗██╗ █████╗  ██████╗ ███╗   ███╗██╗ 
+$bold$redt ██╔══██╗██║   ██║██║██║     ██╔══██╗    ██╔══██╗██╔═══██╗████╗ ████║    ╚██╗██╔╝██║██╔══██╗██╔═══██╗████╗ ████║██║ 
+$bold$redt ██████╔╝██║   ██║██║██║     ██║  ██║    ██████╔╝██║   ██║██╔████╔██║     ╚███╔╝ ██║███████║██║   ██║██╔████╔██║██║ 
+$bold$redt ██╔══██╗██║   ██║██║██║     ██║  ██║    ██╔══██╗██║   ██║██║╚██╔╝██║     ██╔██╗ ██║██╔══██║██║   ██║██║╚██╔╝██║██║ 
+$bold$redt ██████╔╝╚██████╔╝██║███████╗██████╔╝    ██║  ██║╚██████╔╝██║ ╚═╝ ██║    ██╔╝ ██╗██║██║  ██║╚██████╔╝██║ ╚═╝ ██║██║ 
+$bold$redt ╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝    ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ 
+$normal"
+
+export t_bannerclean="
+$bold$redt  ██████╗██╗     ███████╗ █████╗ ███╗   ██╗███████╗██████╗  
+$bold$redt ██╔════╝██║     ██╔════╝██╔══██╗████╗  ██║██╔════╝██╔══██╗ 
+$bold$redt ██║     ██║     █████╗  ███████║██╔██╗ ██║█████╗  ██████╔╝ 
+$bold$redt ██║     ██║     ██╔══╝  ██╔══██║██║╚██╗██║██╔══╝  ██╔══██╗ 
+$bold$redt ╚██████╗███████╗███████╗██║  ██║██║ ╚████║███████╗██║  ██║ 
+$bold$redt  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ 
+$normal"
+
+export t_syncbanner="
+$bold$redt ███████╗██╗   ██╗███╗   ██╗ ██████╗    ██████╗  ██████╗ ███╗   ███╗ 
+$bold$redt ██╔════╝╚██╗ ██╔╝████╗  ██║██╔════╝    ██╔══██╗██╔═══██╗████╗ ████║ 
+$bold$redt ███████╗ ╚████╔╝ ██╔██╗ ██║██║         ██████╔╝██║   ██║██╔████╔██║ 
+$bold$redt ╚════██║  ╚██╔╝  ██║╚██╗██║██║         ██╔══██╗██║   ██║██║╚██╔╝██║ 
+$bold$redt ███████║   ██║   ██║ ╚████║╚██████╗    ██║  ██║╚██████╔╝██║ ╚═╝ ██║ 
+$bold$redt ╚══════╝   ╚═╝   ╚═╝  ╚═══╝ ╚═════╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝ 
+$normal"
+
+export t_dubanner="
+$bold$redt ██████╗ ██╗██████╗ ████████╗██╗   ██╗    ██╗   ██╗███╗   ██╗██╗ ██████╗ ██████╗ ██████╗ ███╗   ██╗███████╗ 
+$bold$redt ██╔══██╗██║██╔══██╗╚══██╔══╝╚██╗ ██╔╝    ██║   ██║████╗  ██║██║██╔════╝██╔═══██╗██╔══██╗████╗  ██║██╔════╝ 
+$bold$redt ██║  ██║██║██████╔╝   ██║    ╚████╔╝     ██║   ██║██╔██╗ ██║██║██║     ██║   ██║██████╔╝██╔██╗ ██║███████╗ 
+$bold$redt ██║  ██║██║██╔══██╗   ██║     ╚██╔╝      ██║   ██║██║╚██╗██║██║██║     ██║   ██║██╔══██╗██║╚██╗██║╚════██║ 
+$bold$redt ██████╔╝██║██║  ██║   ██║      ██║       ╚██████╔╝██║ ╚████║██║╚██████╗╚██████╔╝██║  ██║██║ ╚████║███████║ 
+$bold$redt ╚═════╝ ╚═╝╚═╝  ╚═╝   ╚═╝      ╚═╝        ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝ 
+$normal"
+
+export t_errorbanner="
+$bold$redt ███████╗██████╗ ██████╗  ██████╗ ██████╗ 
+$bold$redt ██╔════╝██╔══██╗██╔══██╗██╔═══██╗██╔══██╗
+$bold$redt █████╗  ██████╔╝██████╔╝██║   ██║██████╔╝
+$bold$redt ██╔══╝  ██╔══██╗██╔══██╗██║   ██║██╔══██╗
+$bold$redt ███████╗██║  ██║██║  ██║╚██████╔╝██║  ██║
+$bold$redt ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+$normal"
+
